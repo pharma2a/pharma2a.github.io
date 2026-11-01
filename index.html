@@ -39,6 +39,8 @@ h1 b{color:var(--acc);font-weight:700}
 .count div{display:flex;flex-direction:column;gap:6px;min-width:0}
 .count span{font-size:clamp(40px,min(7.5vw,10.5vh),160px);color:var(--acc);line-height:1;font-variant-numeric:tabular-nums}
 .count small{font-size:clamp(11px,.85vw,18px);color:var(--dim);text-transform:uppercase;letter-spacing:.1em}
+.count small i,.when i{display:block;font-style:normal;opacity:.6;margin-top:2px}
+.count small i{font-size:.85em}
 .when{font-family:var(--mono);font-size:clamp(13px,1vw,20px);color:var(--dim);margin:0}
 .done{font-family:var(--mono);font-size:clamp(28px,5vw,44px);color:var(--acc);margin:0 0 12px}
 .done a{color:var(--acc)}
@@ -59,13 +61,13 @@ footer a:hover{color:var(--fg)}
     <p class="en">An open protocol between a pharmacy's agent and its suppliers' agents.</p>
 
     <div id="count" class="count" aria-live="polite">
-      <div><span id="d">--</span><small>jours</small></div>
-      <div><span id="h">--</span><small>heures</small></div>
-      <div><span id="m">--</span><small>minutes</small></div>
-      <div><span id="s">--</span><small>secondes</small></div>
+      <div><span id="d">--</span><small>jours<i>days</i></small></div>
+      <div><span id="h">--</span><small>heures<i>hours</i></small></div>
+      <div><span id="m">--</span><small>minutes<i>minutes</i></small></div>
+      <div><span id="s">--</span><small>secondes<i>seconds</i></small></div>
     </div>
-    <p id="when" class="when">open source · jeudi 12&nbsp;novembre 2026, <span style="white-space:nowrap">9&nbsp;h (Paris)</span></p>
-    <p id="done" class="done" hidden>Publié. <a href="https://github.com/pharma2a">github.com/pharma2a</a></p>
+    <p id="when" class="when">open source · jeudi 12&nbsp;novembre 2026, <span style="white-space:nowrap">9&nbsp;h (Paris)</span><i>Thursday 12&nbsp;November 2026, <span style="white-space:nowrap">9&nbsp;am Paris time</span></i></p>
+    <p id="done" class="done" hidden>Publié · Published. <a href="https://github.com/pharma2a">github.com/pharma2a</a></p>
   </main>
 
   <div>
